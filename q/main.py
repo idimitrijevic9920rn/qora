@@ -1,0 +1,22 @@
+__author__ = "Shantam Mathuria"
+__copyright__ = "Copyright 2018"
+__credits__ = ["Shantam Mathuria"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Shantam Mathuria"
+__email__ = "shantam.m22@gmail.com"
+__status__ = "Production"
+
+import time
+from _csv import reader
+from configparser import ConfigParser
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from sys import exit
+
+
+with open('mejlovi.csv','r') as read_obj:
+    csv_reader = reader(read_obj)
+    list_of_rows = list(csv_reader)
+
+print(len(list_of_rows))
